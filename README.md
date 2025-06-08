@@ -44,10 +44,17 @@ After you've finished coding, please complete the following two steps.
 
 1.  **Deploy Your Work:** Deploy your project to Vercel (it's free).
 2.  **Complete this README:** **This is the most important step.** Edit this `README.md` file in your repository to include:
-    * **Live URL:** [Add your Vercel deployment link here]
-    * **Choices Made:** [Briefly explain one technical choice you made]
-    * **Roadblock & Learning:** [Describe one small thing you had to look up and how you solved it]
+    * **Live URL:** https://babynama-health-t58g.vercel.app/
+    * **Choices Made:** I chose to implement the webinar cards directly in the page component instead of creating a separate WebinarCard component. While it might seem more 'React-like' to break this into smaller components, I made this decision for several reasons:
+Simplicity & Scope: The card structure is relatively simple and specific to this single use case. Creating a separate component would have added an extra layer of abstraction without providing immediate benefits.
+Maintenance: Since the cards are only used in one place and have a specific purpose (displaying webinars), keeping the code in one file makes it easier to find and modify everything related to webinar display.
+Future-Proofing: The current implementation is structured in a way that if we need to extract it into a component later (for example, if we need to reuse these cards elsewhere or add more complex functionality), we can easily do so. The JSX is already well-organized and the logic is cleanly separated.
+    * **Roadblock & Learning:** While implementing the date formatting for the webinar cards, I encountered a challenge with the toLocaleDateString() method. Initially, I was getting dates that weren't formatted exactly as I wanted for a professional webinar display. I needed to show both the date and time in a user-friendly format.
+I solved this by looking up the toLocaleDateString() documentation and discovered its powerful options parameter. Here's how I went from:
+
+new Date(webinar.date).toLocaleDateString()
     * **Screenshot:**
-        ![Your Screenshot Here](https://via.placeholder.com/600x400.png?text=Paste+Screenshot+of+Your+App+Here)
+    https://app.supademo.com/demo/cmbntbids002vyc0iwkdly7wc
+
 
 To submit, please share the link to your finished GitHub repository with us. Good luck!
