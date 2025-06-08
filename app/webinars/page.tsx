@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+
 
 // Mock data for webinars
 const webinars = [
