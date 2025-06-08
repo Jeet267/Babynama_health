@@ -23,7 +23,22 @@ Welcome to the Babynama internship assignment! This short project is designed to
 
 ---
 
-### **Part 2: Submission**
+### **Part 2: Implementation Details**
+
+1.  **Live URL:** [Add your Vercel deployment link after deployment]
+2.  **Choices Made:** I chose to implement the webinar cards directly in the page component instead of creating a separate WebinarCard component. This decision was made because the card structure is relatively simple and specific to this use case. The current implementation maintains good readability while avoiding unnecessary abstraction for a component that isn't being reused elsewhere in the application. However, if the project grows and we need to use these cards in other places or add more complex functionality, we can easily extract it into a separate component.
+3.  **Technical Features:**
+    * Responsive grid layout that adapts to different screen sizes
+    * Clean date formatting using JavaScript's built-in date functions
+    * Interactive hover effects and transitions for better user experience
+    * Semantic HTML structure for better accessibility
+    * TypeScript for type safety and better developer experience
+
+The implementation provides a clean, user-friendly interface for parents to quickly scan upcoming webinars and access more details when needed.
+
+---
+
+### **Part 3: Submission**
 
 After you've finished coding, please complete the following two steps.
 
